@@ -14,7 +14,7 @@ export const HeroSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="grid gap-5 order-2 md:order-1">
           <h1 className="font-semibold text-4xl md:text-7xl tracking-wide leading-snug">
-            Let&apos;s make the future tasty and cleaner together
+            Let{"'"}s make the future tasty and cleaner together
           </h1>
 
           <p className="text-xl">
