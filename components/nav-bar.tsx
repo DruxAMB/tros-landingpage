@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Logo from "../public/images/logo-green.png";
-import Avatar from "../public/images/Avatar.png";
+import Avatar from "../public/images/avatar.png";
 import { Button } from "./ui/button";
 import Link from "next/link";
 

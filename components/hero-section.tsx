@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./ui/button";
-import Avatar from "../public/images/Avatar.png";
+import Avatar from "../public/images/avatar.png";
 import Logo from "../public/images/logo-dark.png";
 import HeroImage from "../public/images/hero-image.jpg";
 import Recycle from "../public/images/recycle.jpg";
