@@ -14,8 +14,9 @@ export const HeroSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="grid gap-5 order-2 md:order-1">
           <h1 className="font-semibold text-4xl md:text-7xl tracking-wide leading-snug">
-            Let's make the future tasty and cleaner together
+            Let&apos;s make the future tasty and cleaner together
           </h1>
+
           <p className="text-xl">
             Production of recycling that not only{" "}
             <span className="font-semibold underline">ensures the safety</span>{" "}
@@ -45,12 +46,10 @@ export const HeroSection = () => {
             alt="hero"
             height={500}
             width={450}
-            className=" object-cover"
+            className=" object-cover m-auto"
           />
         </div>
       </div>
-      
-
 
       <div className="grid md:grid-cols-2 gap-4 mt-20 font-semibold">
         <div className="border rounded-xl grid grid-cols-2 gap-5 p-5 bg-[#72c98813]">
@@ -81,7 +80,9 @@ export const HeroSection = () => {
                 <PlusCircleIcon className="p-0 m-0 h-8 w-8 text-[#66af6d]" />
               </div>
             </div>
-            <p className="text-xl h-fit">Limited sustainable packaging options</p>
+            <p className="text-xl h-fit">
+              Limited sustainable packaging options
+            </p>
           </div>
           <Image
             src={Recycle}
