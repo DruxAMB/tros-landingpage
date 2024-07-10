@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="p-3 md:px-28">
+    <main className="p-3 lg:px-28">
       <NavBar />
       <HeroSection />
       <Footer />
