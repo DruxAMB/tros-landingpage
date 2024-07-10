@@ -24,7 +24,7 @@ export const HeroSection = () => {
             <span className="font-semibold underline">minimal</span>{" "}
             environmental impact
           </p>
-          <div className="flex gap-1">
+          <div className="flex flex-wrap gap-1">
             <Button
               variant="outline"
               className="bg-transparent focus:border-2 rounded-full focus:border-black p-8 text-md flex gap-2 font-semibold text-black"
