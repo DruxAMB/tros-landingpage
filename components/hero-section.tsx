@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export const HeroSection = () => {
   return (
-    <div className="my-20 grid">
+    <div className="grid">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="grid gap-5 order-2 md:order-1">
           <h1 className="font-semibold text-4xl md:text-7xl tracking-wide leading-snug">
@@ -77,7 +77,7 @@ export const HeroSection = () => {
                     className="rounded-full hidden md:flex"
                   />
                 </div>
-                <PlusCircleIcon className="p-0 m-0 h-8 w-8 text-[#66af6d]" />
+                <PlusCircleIcon className="p-0 m-0 h-8 w-8 text-[#529c4f]" />
               </div>
             </div>
             <p className="text-xl h-fit">
@@ -125,7 +125,7 @@ export const HeroSection = () => {
                     className="rounded-full hidden md:flex"
                   />
                 </div>
-                <PlusCircleIcon className="p-0 m-0 h-8 w-8 text-[#66af6d] hidden md:flex" />
+                <PlusCircleIcon className="p-0 m-0 h-8 w-8 text-[#529c4f] hidden md:flex" />
               </div>
             </div>
             <p className="text-xl">Plastic environmental pollution</p>

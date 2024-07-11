@@ -16,7 +16,7 @@ export const NavBar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center p-3 lg:px-28 bg-white border-b fixed w-full">
+    <nav className="flex justify-between items-center p-3 lg:px-28 bg-white border-b border-[#cc9933] fixed top-0 w-full">
       <ul className="flex items-center">
         <Button variant="link">
           <Link href="/" className="flex font-bold text-xl">
@@ -60,35 +60,35 @@ export const NavBar = () => {
         <ul className="md:flex justify-between mt-5 md:m-0">
           <Button
             variant="link"
-            className="border w-full rounded-full active:bg-[#66af6d] active:text-white"
+            className="border w-full rounded-full active:bg-[#529c4f] active:text-white"
           >
             <Link href="/">Home </Link>
           </Button>
           <Button
             variant="link"
-            className="border w-full rounded-full active:bg-[#66af6d] active:text-white"
+            className="border w-full rounded-full active:bg-[#529c4f] active:text-white"
           >
-            <Link href="/">About </Link>
+            <Link href="/about">About </Link>
           </Button>
           <Button
             variant="link"
-            className="border w-full rounded-full active:bg-[#66af6d] active:text-white"
+            className="border w-full rounded-full active:bg-[#529c4f] active:text-white"
           >
-            <Link href="/">Problems </Link>
+            <Link href="/problem">Problems </Link>
           </Button>
           <Button
             variant="link"
-            className="border w-full rounded-full active:bg-[#66af6d] active:text-white"
+            className="border w-full rounded-full active:bg-[#529c4f] active:text-white"
           >
-            <Link href="/">Solutions </Link>
+            <Link href="/solution">Solutions </Link>
           </Button>
         </ul>
         <ul className={`${menu ? "block mt-10" : "hidden"} md:hidden`}>
           <Button
             variant="link"
-            className="border rounded-full w-full bg-[#66af6d] text-white active:text-black active:bg-white"
+            className="border rounded-full w-full bg-[#529c4f] text-white active:text-black active:bg-white"
           >
-            <Link href="/">Contact Us</Link>
+            <Link href="/contact">Contact Us</Link>
           </Button>
         </ul>
       </div>
@@ -97,9 +97,9 @@ export const NavBar = () => {
       <ul className="hidden md:block">
         <Button
           variant="link"
-          className="border rounded-full w-full active:bg-[#66af6d] active:text-white"
+          className="border rounded-full w-full active:bg-[#529c4f] active:text-white"
         >
-          <Link href="/">Contact Us</Link>
+          <Link href="/contact">Contact Us</Link>
         </Button>
       </ul>
     </nav>
