@@ -1,13 +1,22 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../public/images/logo-green.png";
 import Avatar from "../public/images/avatar.png";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { MenuIcon, X } from "lucide-react";
 
 export const NavBar = () => {
+  const [menu, setMenu] = useState(false);
+
+  const handleMenu = () => {
+    setMenu(!menu);
+  };
+
   return (
-    <nav className="flex justify-between items-center p-3 lg:px-28">
+    <nav className="flex justify-between items-center p-3 lg:px-28 bg-white border-b fixed w-full">
       <ul className="flex items-center">
         <Button variant="link">
           <Link href="/" className="flex font-bold text-xl">
@@ -37,36 +46,58 @@ export const NavBar = () => {
           <p className="p-1 text-sm">90+ reviews</p>
         </div>
       </ul>
-      <ul className="hidden md:flex justify-between">
-        <Button
-          variant="link"
-          className="border rounded-full focus:bg-[#66af6d] focus:text-white"
-        >
-          <Link href="/">Home </Link>
+      <div className="md:hidden">
+        <Button variant="ghost" onClick={handleMenu}>
+          <MenuIcon className={`${menu ? "hidden" : "block"} h-10 w-10`} />
+          <X className={`${menu ? "flex" : "hidden"} h-10 w-10`} />
         </Button>
+      </div>
+      <div
+        className={`${
+          menu ? "block absolute top-16 bg-white p-5 w-full" : "hidden md:block"
+        }`}
+      >
+        <ul className="md:flex justify-between mt-5 md:m-0">
+          <Button
+            variant="link"
+            className="border w-full rounded-full active:bg-[#66af6d] active:text-white"
+          >
+            <Link href="/">Home </Link>
+          </Button>
+          <Button
+            variant="link"
+            className="border w-full rounded-full active:bg-[#66af6d] active:text-white"
+          >
+            <Link href="/">About </Link>
+          </Button>
+          <Button
+            variant="link"
+            className="border w-full rounded-full active:bg-[#66af6d] active:text-white"
+          >
+            <Link href="/">Problems </Link>
+          </Button>
+          <Button
+            variant="link"
+            className="border w-full rounded-full active:bg-[#66af6d] active:text-white"
+          >
+            <Link href="/">Solutions </Link>
+          </Button>
+        </ul>
+        <ul className={`${menu ? "block mt-10" : "hidden"} md:hidden`}>
+          <Button
+            variant="link"
+            className="border rounded-full w-full bg-[#66af6d] text-white active:text-black active:bg-white"
+          >
+            <Link href="/">Contact Us</Link>
+          </Button>
+        </ul>
+      </div>
+
+
+      <ul className="hidden md:block">
         <Button
           variant="link"
-          className="border rounded-full focus:bg-[#66af6d] focus:text-white"
-        >
-          <Link href="/">About </Link>
-        </Button>
-        <Button
-          variant="link"
-          className="border rounded-full focus:bg-[#66af6d] focus:text-white"
-        >
-          <Link href="/">Problems </Link>
-        </Button>
-        <Button
-          variant="link"
-          className="border rounded-full focus:bg-[#66af6d] focus:text-white"
-        >
-          <Link href="/">Solutions </Link>
-        </Button>
-      </ul>
-      <ul className="justify-between">
-        <Button
-          variant="link"
-          className="border rounded-full focus:bg-[#66af6d] focus:text-white"
+          className="border rounded-full w-full active:bg-[#66af6d] active:text-white"
         >
           <Link href="/">Contact Us</Link>
         </Button>
