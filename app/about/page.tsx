@@ -26,11 +26,11 @@ const page = () => {
         </p>
         <p>
           This word was used by Vikings and is the basis for the English word of
-          today "trash".
+          today &quot;trash&quot;.
         </p>
       </div>
 
-      <div className="">
+      <div >
         <h1 className="text-xl border-b border-[#cc9933] w-fit mb-10">
           BRAND COLOR
         </h1>
@@ -57,21 +57,22 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="">
+
+      <div>
         <h1 className="text-xl border-b-2 border-[#cc9933] w-fit mb-10">
           BRAND FONTS
         </h1>
 
-          <div className="grid gap-5">
-            <div className="orange flex gap-5">
-              <div className="bg-[#cc9933] h-4 w-4"></div>
-              <p className="my-auto text-xl">MONTSERRAT</p>
-            </div>
-            <div className="green flex gap-5">
-              <div className="bg-[#529c4f] h-4 w-4"></div>
-              <p className="my-auto text-xl">AZONIX</p>
-            </div>
+        <div className="grid gap-5">
+          <div className="orange flex gap-5">
+            <div className="bg-[#cc9933] h-4 w-4"></div>
+            <p className="my-auto text-xl">MONTSERRAT</p>
           </div>
+          <div className="green flex gap-5">
+            <div className="bg-[#529c4f] h-4 w-4"></div>
+            <p className="my-auto text-xl">AZONIX</p>
+          </div>
+        </div>
       </div>
     </div>
   );

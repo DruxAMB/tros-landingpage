@@ -52,6 +52,7 @@ export const NavBar = () => {
           <X className={`${menu ? "flex" : "hidden"} h-10 w-10`} />
         </Button>
       </div>
+      
       <div
         className={`${
           menu ? "block absolute top-16 bg-white p-5 w-full" : "hidden md:block"
