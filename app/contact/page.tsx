@@ -2,7 +2,11 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>Contact</div>
+    <div className='my-40'>
+       <h1 className="font-bold text-2xl border-b-4 m-auto border-[#cc9933] w-fit mb-10">
+        CONTACT US
+      </h1>
+    </div>
   )
 }
 

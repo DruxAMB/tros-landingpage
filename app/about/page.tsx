@@ -31,29 +31,47 @@ const page = () => {
       </div>
 
       <div className="">
-            <h1 className="text-xl border-b border-[#cc9933] w-fit mb-10">BRAND COLOR</h1>
+        <h1 className="text-xl border-b border-[#cc9933] w-fit mb-10">
+          BRAND COLOR
+        </h1>
 
-            <div className="flex gap-4">
-            <div className="grid gap-5">
-                <div className="orange flex gap-5">
-                    <div className="bg-[#cc9933] h-8 w-8"></div>
-                    <p className="my-auto text-xl">#Cc9933</p>
-                </div>
-                <div className="WHITE flex gap-5">
-                    <div className="bg-[#fff] h-8 w-8 border"></div>
-                    <p className="my-auto text-xl">#FFFFFF</p>
-                </div>
-                <div className="green flex gap-5">
-                    <div className="bg-[#529c4f] h-8 w-8"></div>
-                    <p className="my-auto text-xl">#529C4F</p>
-                </div>
+        <div className="flex gap-4">
+          <div className="grid gap-5">
+            <div className="orange flex gap-5">
+              <div className="bg-[#cc9933] h-8 w-8"></div>
+              <p className="my-auto text-xl">#Cc9933</p>
             </div>
-            <div className="flex gap-1 md:gap-4">
-                <div className="bg-[#529c4f] w-24"></div>
-                <div className="bg-[#fff] border w-24"></div>
-                <div className="bg-[#cc9933] w-24"></div>
+            <div className="WHITE flex gap-5">
+              <div className="bg-[#fff] h-8 w-8 border"></div>
+              <p className="my-auto text-xl">#FFFFFF</p>
             </div>
+            <div className="green flex gap-5">
+              <div className="bg-[#529c4f] h-8 w-8"></div>
+              <p className="my-auto text-xl">#529C4F</p>
             </div>
+          </div>
+          <div className="flex gap-1 md:gap-4">
+            <div className="bg-[#529c4f] w-24"></div>
+            <div className="bg-[#fff] border w-24"></div>
+            <div className="bg-[#cc9933] w-24"></div>
+          </div>
+        </div>
+      </div>
+      <div className="">
+        <h1 className="text-xl border-b-2 border-[#cc9933] w-fit mb-10">
+          BRAND FONTS
+        </h1>
+
+          <div className="grid gap-5">
+            <div className="orange flex gap-5">
+              <div className="bg-[#cc9933] h-4 w-4"></div>
+              <p className="my-auto text-xl">MONTSERRAT</p>
+            </div>
+            <div className="green flex gap-5">
+              <div className="bg-[#529c4f] h-4 w-4"></div>
+              <p className="my-auto text-xl">AZONIX</p>
+            </div>
+          </div>
       </div>
     </div>
   );

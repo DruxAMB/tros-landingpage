@@ -119,7 +119,7 @@ export const Footer = () => {
         </div>
 
       </div>
-        <div className="text-center mt-10 border-t border-[#cc9933] bg-green-700 text-white p-2">
+        <div className="text-center mt-10 border-t border-[#cc9933] bg-green-700 text-[#ffffff9f] p-2">
           alrights reserved &copy; by <a href="/">tros</a>
         </div>
     </div>
