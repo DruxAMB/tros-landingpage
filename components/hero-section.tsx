@@ -58,7 +58,7 @@ export const HeroSection = () => {
               <p className="bg-white rounded-full text-black py-2 px-3 h-10 shadow-sm">
                 001
               </p>
-              <div className="flex gap-10 p-1 justify-between bg-[#72c98833] rounded-full h-10">
+              <div className="flex p-1 justify-between bg-[#72c98833] rounded-full h-10">
                 <div className="flex">
                   <Image
                     src={Avatar}
@@ -74,7 +74,7 @@ export const HeroSection = () => {
                     alt="Avatar"
                     height={10}
                     width={35}
-                    className="rounded-full"
+                    className="rounded-full hidden md:flex"
                   />
                 </div>
                 <PlusCircleIcon className="p-0 m-0 h-8 w-8 text-[#66af6d]" />
@@ -122,10 +122,10 @@ export const HeroSection = () => {
                     alt="Avatar"
                     height={10}
                     width={35}
-                    className="rounded-full"
+                    className="rounded-full hidden md:flex"
                   />
                 </div>
-                <PlusCircleIcon className="p-0 m-0 h-8 w-8 text-[#66af6d]" />
+                <PlusCircleIcon className="p-0 m-0 h-8 w-8 text-[#66af6d] hidden md:flex" />
               </div>
             </div>
             <p className="text-xl">Plastic environmental pollution</p>
