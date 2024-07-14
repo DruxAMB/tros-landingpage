@@ -6,7 +6,7 @@ import { FaEnvelope } from 'react-icons/fa';
 import { FaPhoneVolume } from 'react-icons/fa6';
 import { MdAccountCircle } from 'react-icons/md';
 
-const page = () => {
+const Page = () => {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
@@ -28,11 +28,11 @@ const page = () => {
         alert("Thank you for joining the waitlist");
     }, [firstName, lastName, email, phoneNumber])
     return (
-        <div className="rounded-lg w-[70dvw] md:w-[60dvw] h-auto shadow-lg bg-white-100 mx-auto md:py-10 md:px-20 p-10 flex flex-col items-center justify-center bg-blue-50">
+        <div className="rounded-lg md:w-[60dvw] h-auto shadow-lg bg-white-100 mx-auto md:py-10 md:px-20 p-5 flex flex-col items-center justify-center bg-blue-50">
             <div className="text-4xl font-bold">
                 Join the waitlist
             </div>
-            <div className="font-semibold">Fill the form to be a part of our amazing <span className="text-green-700">ecosystem</span></div>
+            <div className="font-semibold text-center">Fill the form to be a part of our amazing <span className="text-green-700">ecosystem</span></div>
             <div className="mt-14 flex flex-col gap-2 w-full">
                 <div className='flex flex-row w-full gap-5'>
                     <Input
@@ -76,4 +76,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
