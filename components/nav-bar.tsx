@@ -16,7 +16,7 @@ export const NavBar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center p-3 lg:px-28 bg-white border-b border-[#cc9933] fixed top-0 w-full">
+    <nav className="flex justify-between items-center p-3 lg:px-28 bg-white border-b border-[#cc9933] fixed top-0 w-full z-10">
       <ul className="flex items-center">
         <Button variant="link">
           <Link href="/" className="flex font-bold text-xl">
