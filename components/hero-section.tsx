@@ -28,14 +28,14 @@ export const HeroSection = () => {
           <div className="flex flex-wrap gap-1">
             <Button
               variant="outline"
-              className="bg-transparent focus:border-2 rounded-full focus:border-black p-8 text-md flex gap-2 font-semibold text-black"
+              className="bg-transparent focus:border-2 rounded-full focus:border-black h-14 text-md flex gap-2 font-semibold text-black"
             >
-              <Link href="/waitlist">Join the Wailtlist </Link>
+              <Link href="/waitlist" className="p-4">Join the Wailtlist </Link>
               <Image src={Logo} alt="Avatar" height={30} width={30} />{" "}
             </Button>
             <Button
               variant="outline"
-              className="bg-transparent focus:border-2 rounded-full focus:border-black p-8 text-md flex gap-2 font-semibold text-black"
+              className="bg-transparent focus:border-2 rounded-full focus:border-black h-14 text-md flex gap-2 font-semibold text-black"
             >
               Download App <ArrowDown />
             </Button>

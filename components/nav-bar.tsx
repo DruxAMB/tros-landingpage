@@ -19,7 +19,7 @@ export const NavBar = () => {
     <nav className="flex justify-between items-center p-3 lg:px-28 bg-white border-b border-[#cc9933] fixed top-0 w-full z-10">
       <ul className="flex items-center">
         <Button variant="link">
-          <Link href="/" className="flex font-bold text-xl">
+          <Link className="p-2" href="/" className="flex font-bold text-xl">
             <Image src={Logo} alt="logo" height={20} width={30} className="" />{" "}
             Tros
           </Link>
@@ -63,25 +63,25 @@ export const NavBar = () => {
             variant="link"
             className="border w-full rounded-full active:bg-[#529c4f] active:text-white"
           >
-            <Link href="/">Home </Link>
+            <Link className="p-2" href="/">Home </Link>
           </Button>
           <Button
             variant="link"
             className="border w-full rounded-full active:bg-[#529c4f] active:text-white"
           >
-            <Link href="/about">About </Link>
+            <Link className="p-2" href="/about">About </Link>
           </Button>
           <Button
             variant="link"
             className="border w-full rounded-full active:bg-[#529c4f] active:text-white"
           >
-            <Link href="/problem">Problems </Link>
+            <Link className="p-2" href="/problem">Problems </Link>
           </Button>
           <Button
             variant="link"
             className="border w-full rounded-full active:bg-[#529c4f] active:text-white"
           >
-            <Link href="/solution">Solutions </Link>
+            <Link className="p-2" href="/solution">Solutions </Link>
           </Button>
         </ul>
         <ul className={`${menu ? "block mt-10" : "hidden"} md:hidden`}>
@@ -89,7 +89,7 @@ export const NavBar = () => {
             variant="link"
             className="border rounded-full w-full bg-[#529c4f] text-white active:text-black active:bg-white"
           >
-            <Link href="/contact">Contact Us</Link>
+            <Link className="p-2" href="/contact">Contact Us</Link>
           </Button>
         </ul>
       </div>
@@ -100,7 +100,7 @@ export const NavBar = () => {
           variant="link"
           className="border rounded-full w-full active:bg-[#529c4f] active:text-white"
         >
-          <Link href="/contact">Contact Us</Link>
+          <Link className="p-2" href="/contact">Contact Us</Link>
         </Button>
       </ul>
     </nav>
