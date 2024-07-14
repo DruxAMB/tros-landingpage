@@ -19,7 +19,7 @@ export const NavBar = () => {
     <nav className="flex justify-between items-center p-3 lg:px-28 bg-white border-b border-[#cc9933] fixed top-0 w-full z-10">
       <ul className="flex items-center">
         <Button variant="link">
-          <Link className="p-2" href="/" className="flex font-bold text-xl">
+          <Link href="/" className="p-2 flex font-bold text-xl">
             <Image src={Logo} alt="logo" height={20} width={30} className="" />{" "}
             Tros
           </Link>
