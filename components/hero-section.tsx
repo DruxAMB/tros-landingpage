@@ -7,6 +7,7 @@ import Recycle from "../public/images/recycle.jpg";
 import Recycle2 from "../public/images/recycle2.png";
 import { ArrowDown, PlusCircleIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const HeroSection = () => {
   return (
@@ -29,7 +30,7 @@ export const HeroSection = () => {
               variant="outline"
               className="bg-transparent focus:border-2 rounded-full focus:border-black p-8 text-md flex gap-2 font-semibold text-black"
             >
-              Join EcoFuture Now{" "}
+              <Link href="/waitlist">Join the Wailtlist </Link>
               <Image src={Logo} alt="Avatar" height={30} width={30} />{" "}
             </Button>
             <Button
